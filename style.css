@@ -256,6 +256,11 @@ button {
   background: rgba(255,255,255,0.08);
 }
 
+.icon svg {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
 .contact-icons {
   display: grid;
   gap: 0.9rem;
@@ -500,17 +505,101 @@ button {
   margin-bottom: 0.9rem;
 }
 
-.certs__grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
+/* ================= CERTIFICATIONS ================= */
+
+
+.certs__grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:2rem;
 }
 
-.cert-card p {
-  color: var(--muted);
-  line-height: 1.65;
+.cert-card{
+    background:var(--surface);
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s ease;
+    box-shadow:var(--shadow);
 }
 
+.cert-card:hover{
+    transform:translateY(-8px);
+}
+
+.cert-image{
+    position:relative;
+    width:100%;
+    height:220px;
+    overflow:hidden;
+}
+
+.cert-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    transition:.4s ease;
+}
+
+.cert-card:hover .cert-image img{
+    transform:scale(1.05);
+}
+
+.cert-date{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#2f3554;
+    color:#fff;
+    padding:8px 16px;
+    border-radius:10px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.cert-content{
+    padding:22px;
+}
+
+.cert-content h3{
+    margin:0;
+    margin-bottom:10px;
+}
+
+.cert-company{
+    color:var(--muted);
+    margin-bottom:18px;
+}
+
+.cert-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.cert-tags span{
+    background:rgba(108,99,255,.12);
+    color:var(--primary);
+    padding:7px 14px;
+    border-radius:50px;
+    font-size:.82rem;
+}
+
+.cert-btn{
+    display:inline-block;
+    padding:12px 18px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cert-btn:hover{
+    opacity:.9;
+}
 .education__grid {
   grid-template-columns: repeat(2, minmax(260px, 1fr));
 }
@@ -581,14 +670,7 @@ button {
 @media (max-width: 980px) {
   .hero__grid,
   .about__grid,
-  .skills__grid,
-  .education__grid,
-  .contact__grid,
-  .certs__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card {
+  .skills__grid,z
     grid-template-columns: 1fr;
   }
 
