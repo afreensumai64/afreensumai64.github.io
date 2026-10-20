@@ -1,24 +1,24 @@
 const projects = [
   {
-    title: "Orbit IQ",
-    description: "Developed a machine learning system to predict potential space debris collisions and support safer satellite operations through data-driven risk analysis.",
-    technologies: ["Python", "Scikit-learn", "FastAPI", "Next.js", "TypeScript"],
-    github: "https://github.com/",
+    title: "HireFlow Placement Portal",
+    description: "A web-based role-based placement portal built for IIT Madras MAD-I featuring admin approvals, company drive management, student applications, resume uploads, and status tracking.",
+    technologies: ["Python", "Flask", "Jinja2", "Bootstrap 5", "SQLite", "Flask-SQLAlchemy"],
+    github: "https://github.com/afreensumai64/",
     demo: "https://example.com/",
-    image: "Orbit IQ"
+    image: "HireFlow Portal"
   },
   {
-    title: "Parkinson's Gait & Tremor Analysis",
-    description: "Built an AI-powered healthcare analytics project that uses computer vision and machine learning to analyze gait patterns and tremors for Parkinson's disease assessment.",
-    technologies: ["Python","Scikit-learn", "OpenCV", "Mediapipe", "Streamlit"],
-    github: "https://github.com/afreensumai64/Parkinson-Gait-and-Tremor-Analysis-System",
+    title: "Handwritten Digit Recognition",
+    description: "A deep learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset with 99%+ accuracy and a Streamlit web interface.",
+    technologies: ["Python", "TensorFlow/Keras", "NumPy", "Pandas", "Streamlit"],
+    github: "https://github.com/afreensumai64/Handwritten-Digit-Recognition",
     demo: "https://example.com/",
-    image: "Parkinson's Analysis"
+    image: "Digit Recognition"
   },
   {
     title: "Car Price Prediction",
     description: "Created a machine learning model to estimate vehicle prices based on features such as brand, model, fuel type, and vehicle specifications.",
-    technologies: ["Python", "XGBoost", "Pandas", "Numpys"],
+    technologies: ["Python", "XGBoost", "Pandas", "Numpy"],
     github: "https://github.com/afreensumai64/Car-Price-Prediction",
     demo: "https://example.com/",
     image: "Car Price Prediction"
@@ -101,7 +101,3 @@ navLinks.forEach(link => {
 });
 
 contactForm.addEventListener('submit', handleContactSubmit);
-
-// Add new project objects inside the projects array above.
-// Add new certification cards in index.html inside the certifications section.
-// Add new experience timeline items in index.html inside the experience section.
